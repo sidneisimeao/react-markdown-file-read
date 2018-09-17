@@ -30,7 +30,14 @@ _fs2.default.readdir(path, function (err, items) {
 
         _fs2.default.readFile(file, 'utf-8', function (err, data) {
             if (err) throw err;
-            console.log(data);
+
+            console.log(data);return;
+            // let input = `let input = '${data}'`;
+
+            _fs2.default.writeFile(destiny + '/teste.txt', "<ReactMarkdown source=" + { data: data } + " />", { enconding: 'utf-8', flag: 'w+' }, function (err) {
+                if (err) throw err;
+                console.log('Arquivo salvo!');
+            });
         });
     });
 });

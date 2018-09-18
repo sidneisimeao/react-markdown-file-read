@@ -1,40 +1,43 @@
-# Título nível 1
-## Título nível 2
-### Título nível 3
-#### Título nível 4
-##### Título nível 5
-###### Título nível 6
+# Live demo
 
-Javascript é _cool_!
-**Da2k** é a pronúncia para **Daciuk**: DA-TWO-K!
+Changes are automatically rendered as you type.
 
-[Blog do Da2k](https://blog.da2k.com.br)
+* Implements [GitHub Flavored Markdown](https://github.github.com/gfm/)
+* Renders actual, "native" React DOM elements
+* Allows you to escape or skip HTML (try toggling the checkboxes above)
+* If you escape or skip the HTML, no `dangerouslySetInnerHTML` is used! Yay!
 
-[Blog do Da2k](https://blog.da2k.com.br "Clique e acesse agora!")
+## HTML block below
 
-<https://www.google.com.br>
+<blockquote>
+  This blockquote will change based on the HTML settings above.
+</blockquote>
 
-> Esse é um bloco de citação.
-> Ele pode ter várias linhas por parágrafo.
->
-> Inclusive, dando um espaço, você tem um novo parágrafo.
+## How about some code?
+```js
+var React = require('react');
+var Markdown = require('react-markdown');
 
-* Item 1
-* Item 2
-* Item 3
-  
-+ Item 1
-+ Item 2
-+ Item 3
-  
-- Item 1
-- Item 2
-- Item 3
+React.render(
+  <Markdown source="# Your markdown here" />,
+  document.getElementById('content')
+);
+```
 
-1. Item 1
-2. Item 2
-3. Item 3
+Pretty neat, eh?
 
-![Banana](http://cdn.osxdaily.com/wp-content/uploads/2013/07/dancing-banana.gif)
+## Tables?
 
-`<blockquote>` é uma tag HTML.
+| Feature | Support |
+| ------ | ----------- |
+| tables | ✔ |
+| alignment | ✔ |
+| wewt | ✔ |
+
+## More info?
+
+Read usage information and more on [GitHub](//github.com/rexxars/react-markdown)
+
+---------------
+
+A component by [VaffelNinja](http://vaffel.ninja) / Espen Hovlandsdal

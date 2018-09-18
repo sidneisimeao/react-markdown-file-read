@@ -1,0 +1,47 @@
+<h1 id="live-demo">Live demo</h1>
+<p>Changes are automatically rendered as you type.</p>
+<ul>
+<li>Implements <a href="https://github.github.com/gfm/">GitHub Flavored Markdown</a></li>
+<li>Renders actual, "native" React DOM elements</li>
+<li>Allows you to escape or skip HTML (try toggling the checkboxes above)</li>
+<li>If you escape or skip the HTML, no <code>dangerouslySetInnerHTML</code> is used! Yay!</li>
+</ul>
+<h2 id="html-block-below">HTML block below</h2>
+<blockquote>
+  This blockquote will change based on the HTML settings above.
+</blockquote>
+
+<h2 id="how-about-some-code-">How about some code?</h2>
+<pre><code classNameName="language-js">var React = require('react');
+var Markdown = require('react-markdown');
+
+<p>React.render(
+  <Markdown source="# Your markdown here" />,
+  document.getElementById('content')
+);</code></pre></p>
+<p>Pretty neat, eh?</p>
+<h2 id="tables-">Tables?</h2>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Support</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>tables</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>alignment</td>
+<td>✔</td>
+</tr>
+<tr>
+<td>wewt</td>
+<td>✔</td>
+</tr>
+</tbody></table>
+<h2 id="more-info-">More info?</h2>
+<p>Read usage information and more on <a href="//github.com/rexxars/react-markdown">GitHub</a></p>
+<hr/>
+<p>A component by <a href="http://vaffel.ninja">VaffelNinja</a> / Espen Hovlandsdal</p>
